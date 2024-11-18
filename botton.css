@@ -1,0 +1,91 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+
+body { 
+  background-color: #ffefe0;
+  margin: 0;
+  padding: 0;
+}
+
+span.title {
+  margin: 0 auto;
+  color: #707921;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.14rem;
+  display: inline-block;
+  padding: 2px 0px;
+  margin-left: -2px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  white-space: nowrap; 
+  
+}
+
+
+.swiggleBox {
+  width: 200px; 
+  height: 80px; 
+  margin: 10px auto;
+  color: #bf4342;
+  
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.1rem; 
+  font-weight: bold;
+  line-height: 80px; 
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  overflow: hidden;
+  text-shadow: 0 4px 6px #ffec8d;
+  margin-left: -30px;
+}
+
+
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; 
+  height: 100%; 
+}
+
+svg rect, svg path, svg polyline {
+  fill: none;
+  stroke: #bf4342;
+  stroke-width: 3; 
+}
+
+svg rect {
+  stroke-dasharray: 500, 0; 
+  transition: all 0.8s ease-in-out;
+}
+
+.basicBox:hover svg rect {
+  stroke-width: 4;
+  stroke-dasharray: 30, 250; 
+  stroke-dashoffset: 30;
+}
+
+svg path {
+  stroke-dasharray: 250, 0; 
+  transition: all 1s ease-in-out;
+}
+
+.swiggleBox:hover svg path {
+  stroke-width: 4; 
+  stroke-dasharray: 0, 300; 
+  stroke-dashoffset: 20;
+}
+
+.retext {
+  text-decoration: underline;
+  text-decoration-color: #fff7d6; 
+  text-decoration-thickness: 1.5px;
+  color: inherit;
+}

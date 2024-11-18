@@ -1,0 +1,201 @@
+h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #bf4342;
+    text-align: center;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    font-family: "IBM Plex Sans Thai", sans-serif;
+}
+
+
+
+.product-fieldset {
+    border: 2px solid #dceea3;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px auto;
+    text-align: center;
+    background-color: #ffefe1;
+    width: 90%;
+    max-width: 1000px;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+    margin-top: 0px;
+
+}
+
+
+.product {
+    background-color: #fff;
+    border: 2px solid #dceea3;
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    min-width: 250px;
+    height: auto;
+}
+
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    max-height: 180px;
+}
+
+
+
+
+.product-description {
+    font-size: 13px;
+    color: #555;
+    margin: 10px 0;
+    text-align: center;
+    font-family: "IBM Plex Sans Thai", sans-serif;
+}
+
+
+.price-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+    font-family: "IBM Plex Sans Thai", sans-serif;
+}
+
+
+.price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #d9534f;
+    font-family: "IBM Plex Sans Thai", sans-serif;
+   
+}
+
+
+
+.old-price {
+    text-decoration: line-through;
+    font-size: 12px;
+    color: #999;
+    margin-right: 10px;
+    font-family: "IBM Plex Sans Thai", sans-serif;
+}
+
+
+.quantity-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.quantity-label {
+    font-size: 14px;
+    color: #555;
+}
+
+
+.quantity-select {
+    font-size: 14px;
+    padding: 4px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.quantity-input {
+    width: 50px;
+    text-align: center;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+
+
+input[type="submit"] {
+    background-color: #dceea3;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+
+}
+
+input[type="submit"]:hover {
+    background-color: #c8e09a;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .product {
+        width: 100%;
+    }
+
+    .category {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+
+
+
+.formsubcontainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.buttonsubmit {
+    font-size: 18px;
+    color: #fff;
+    background-color: #bf4342;
+    border: none;
+    padding: 12px 30px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buttonsubmit:hover {
+    background-color: #45a049;
+}
+
+
+.buttonreset {
+    font-size: 12px;
+    color: #555;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    padding: 8px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buttonreset:hover {
+    background-color: #e0e0e0;
+}
